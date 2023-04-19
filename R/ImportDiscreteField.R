@@ -1,5 +1,8 @@
 #' Generate a data frame with a station's discrete field data.
 #'
+#' @description
+#' Input a FLIMS station number to import a formatted data frame with its discrete field data.
+#'
 #' @param stationNumber A station's FLIMS* station number.
 #'
 #' @return A data frame with all of the discrete field data records for a station.

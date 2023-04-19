@@ -1,5 +1,8 @@
 #' Generate a data frame with a station's discrete lab data.
 #'
+#' @description
+#' Input a FLIMS station number to import a formatted data frame with its discrete lab data.
+#'
 #' @param stationNumber a station's FLIMS* station number.
 #'
 #' @return A data frame with all of the discrete lab data records for a station.

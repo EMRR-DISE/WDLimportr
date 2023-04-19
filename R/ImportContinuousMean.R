@@ -1,5 +1,9 @@
 #' Generate a data frame with a station's continuous daily average data.
 #'
+#' @description
+#' Input a station number* to import a formatted data frame with its continuous daily average data from WDL.
+#'
+#'
 #' @param stationNumber A station's station number.
 #' @param parameters A character vector of the parameters you want to select.
 #'

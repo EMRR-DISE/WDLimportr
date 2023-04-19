@@ -1,4 +1,8 @@
-#' Import CSV links from Station Trace Links data frame.
+#' Import CSV links from CNRA DWR Continuous Data Download Links
+#'
+#' @description
+#' Input a CSV link from CNRA and return a formatted data frame for that file.
+#'
 #'
 #' @param csv_link A CSV link sourced from the CNRA Station-Trace links to time-series downloads.
 #'
