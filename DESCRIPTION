@@ -1,0 +1,19 @@
+Package: WDLimportr
+Title: Import Water Data Library Data
+Version: 0.0.0.9000
+Authors@R: 
+    person("Juan", "De La Torre", , "Juan.DeLaTorre@water.ca.gov", role = c("aut", "cre"))
+Description: This package allows users to import Water Data Library (WDL) discrete and continuous data through the California Natural Resources Agency Open Data Portal.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
+Imports: 
+    dplyr,
+    janitor,
+    jsonlite,
+    magrittr,
+    purrr,
+    stringr,
+    tidyr,
+    utils
