@@ -2,7 +2,7 @@
 % Please edit documentation in R/ImportContinuousCSV.R
 \name{ImportContinuousCSV}
 \alias{ImportContinuousCSV}
-\title{Import CSV links from Station Trace Links data frame.}
+\title{Import CSV links from CNRA DWR Continuous Data Download Links}
 \usage{
 ImportContinuousCSV(csv_link)
 }
@@ -13,7 +13,7 @@ ImportContinuousCSV(csv_link)
 A formatted data frame which excludes quality code column and other extraneous information.
 }
 \description{
-Import CSV links from Station Trace Links data frame.
+Input a CSV link from CNRA and return a formatted data frame for that file.
 }
 \examples{
 CNRA_CSV_link <- "https://wdlstorageaccount.blob.core.windows.net/continuous/01N04E36Q001M/por/01N04E36Q001M_Groundwater_Level_Below_Ground_Surface_Raw.csv"

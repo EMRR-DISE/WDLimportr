@@ -13,7 +13,7 @@ ImportDiscreteField(stationNumber)
 A data frame with all of the discrete field data records for a station.
 }
 \description{
-Generate a data frame with a station's discrete field data.
+Input a FLIMS station number to import a formatted data frame with its discrete field data.
 }
 \examples{
 test_discrete_field <- "B9D82851352"

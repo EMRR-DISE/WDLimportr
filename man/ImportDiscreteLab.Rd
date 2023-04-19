@@ -13,9 +13,9 @@ ImportDiscreteLab(stationNumber)
 A data frame with all of the discrete lab data records for a station.
 }
 \description{
-Generate a data frame with a station's discrete lab data.
+Input a FLIMS station number to import a formatted data frame with its discrete lab data.
 }
 \examples{
 test_discrete_lab <- "B9D82851352"
-ImportDiscreteLab(test_discrete_lab)
+ImportDiscreteLab(stationNumber = test_discrete_lab)
 }

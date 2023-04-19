@@ -15,7 +15,7 @@ ImportContinuousMean(stationNumber, parameters = NULL)
 A data frame with all or some of the parameters for a station's daily average data.
 }
 \description{
-Generate a data frame with a station's continuous daily average data.
+Input a station number* to import a formatted data frame with its continuous daily average data from WDL.
 }
 \examples{
 test_station_1 <- "B9156000"

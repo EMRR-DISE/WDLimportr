@@ -15,7 +15,7 @@ ImportContinuousRaw(stationNumber, parameters = NULL)
 A data frame with all or some of the parameters for a station's raw data.
 }
 \description{
-Generate a data frame with a station's continuous raw data.
+Input a station number* to import a formatted data frame with its continuous raw data from WDL.
 }
 \examples{
 test_station_1 <- "B9156000"
