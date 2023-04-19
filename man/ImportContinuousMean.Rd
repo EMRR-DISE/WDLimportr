@@ -19,12 +19,9 @@ Input a station number* to import a formatted data frame with its continuous dai
 }
 \examples{
 test_station_1 <- "B9156000"
-test_station_2 <- "B91560Q"
 ImportContinuousMean(stationNumber = test_station_1)
-ImportContinuousMean(stationNumber = test_station_2)
 test_parameters <- c("Water Temperature",
                      "Electrical Conductivity at 25C",
                      "Dissolved Oxygen")
 ImportContinuousMean(stationNumber = test_station_1, parameters = test_parameters)
-ImportContinuousMean(stationNumber = test_station_2, parameters = test_parameters)
 }

@@ -19,12 +19,9 @@ Input a station number* to import a formatted data frame with its continuous raw
 }
 \examples{
 test_station_1 <- "B9156000"
-test_station_2 <- "B91560Q"
 ImportContinuousRaw(stationNumber = test_station_1)
-ImportContinuousRaw(stationNumber = test_station_2)
 test_parameters <- c("Water Temperature",
                      "Electrical Conductivity at 25C",
                      "Dissolved Oxygen")
 ImportContinuousRaw(stationNumber = test_station_1, parameters = test_parameters)
-ImportContinuousRaw(stationNumber = test_station_2, parameters = test_parameters)
 }
