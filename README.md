@@ -58,7 +58,7 @@ There are two functions to import discrete water data from WDL.
 ``` r
 discrete_lab_station_number <- "B9D82851352" # FLIMS* station number
 
-head(ImportDiscreteLab(stationNumber = discrete_lab_station_number))
+head(WDLimportr::ImportDiscreteLab(stationNumber = discrete_lab_station_number))
 ```
 
 `ImportDiscreteLab()` will take a FLIMS\* station number as an input and
@@ -70,7 +70,7 @@ the way that it is presented in CNRA.
 ``` r
 discrete_field_station_number <- "B9D82851352" # FLIMS* station number
 
-head(ImportDiscreteField(stationNumber = discrete_field_station_number))
+head(WDLimportr::ImportDiscreteField(stationNumber = discrete_field_station_number))
 ```
 
 `ImportDiscreteField()` will take a FLIMS\* station number as an input
@@ -90,9 +90,9 @@ test_parameters <- c("Water Temperature",
                      "Electrical Conductivity at 25C",
                      "Dissolved Oxygen")
 
-head(ImportContinuousRaw(stationNumber = continuous_station, parameters = NULL))
+head(WDLimportr::ImportContinuousRaw(stationNumber = continuous_station, parameters = NULL))
 
-head(ImportContinuousRaw(stationNumber = continuous_station, parameters = test_parameters))
+head(WDLimportr::ImportContinuousRaw(stationNumber = continuous_station, parameters = test_parameters))
 ```
 
 `ImportContinuousRaw()` will take a station number as an input and
@@ -112,9 +112,9 @@ test_parameters <- c("Water Temperature",
                      "Electrical Conductivity at 25C",
                      "Dissolved Oxygen")
 
-head(ImportContinuousMean(stationNumber = continuous_station, parameters = NULL))
+head(WDLimportr::ImportContinuousMean(stationNumber = continuous_station, parameters = NULL))
 
-head(ImportContinuousMean(stationNumber = continuous_station, parameters = test_parameters))
+head(WDLimportr::ImportContinuousMean(stationNumber = continuous_station, parameters = test_parameters))
 ```
 
 `ImportContinuousMean()` will take a station number as an input and
@@ -133,7 +133,7 @@ intended to be used by the functions `ImportContinuousRaw()` and
 ``` r
 CNRA_CSV_link <- "https://wdlstorageaccount.blob.core.windows.net/continuous/01N04E36Q001M/por/01N04E36Q001M_Groundwater_Level_Below_Ground_Surface_Raw.csv"
 
-head(ImportContinuousCSV(csv_link = CNRA_CSV_link))
+head(WDLimportr::ImportContinuousCSV(csv_link = CNRA_CSV_link))
 ```
 
 `ImportContinuousCSV()` will take a CSV link from the Station-Trace
