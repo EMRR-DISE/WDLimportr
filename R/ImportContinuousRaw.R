@@ -44,7 +44,6 @@ ImportContinuousRaw <- function(stationNumber, parameters = NULL) {
   df_raw <- filtered_df_station_link$download_link %>%
     lapply(. %>% ImportContinuousCSV) %>%
     purrr::reduce(dplyr::full_join, by = 'Date') %>%
-    dplyr::mutate(Date = stringr::str_replace(Date, "T", " "))
     dplyr::mutate(Date = as.POSIXct(Date, format = "%m/%d/%Y %H:%M:%S")) %>%
     dplyr::rename_with(~ c("date", filtered_df_station_link$parameter)) %>%
     janitor::clean_names()
