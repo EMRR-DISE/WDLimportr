@@ -7,7 +7,6 @@
 #' @param csv_link A CSV link sourced from the CNRA Station-Trace links to time-series downloads.
 #'
 #' @return A formatted data frame which excludes quality code column and other extraneous information.
-#' @export
 #'
 #' @examples
 #' CNRA_CSV_link <- "https://wdlstorageaccount.blob.core.windows.net/continuous/01N04E36Q001M/por/01N04E36Q001M_Groundwater_Level_Below_Ground_Surface_Raw.csv"
