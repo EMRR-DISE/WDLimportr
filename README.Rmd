@@ -51,7 +51,7 @@ Object  <- c("`ImportDiscreteLab(stationNumber)`",
            "`ImportContinuousRaw(stationNumber, parameters = NULL)`",
            "`ImportContinuousMean(stationNumber, parameters = NULL)`",
            "`continuous_stations`",
-           "`discrete_stations")
+           "`discrete_stations`")
 Type <- c("Function",
           "Function",
           "Function",
@@ -69,7 +69,7 @@ knitr::kable(d)
 ```
 
 ### Discrete Data
-####There are two functions to import discrete water data from WDL.
+#### There are two functions to import discrete water data from WDL.
 
 1. `ImportDiscreteLab()`
 ```{r eval=FALSE}
@@ -89,7 +89,7 @@ head(WDLimportr::ImportDiscreteField(stationNumber = discrete_field_station_numb
 
 `ImportDiscreteField()` will take a FLIMS* station number as an input and return a data frame which has that station's WDL field data, formatted in the way that it is presented in CNRA.
 
-#### `discrete_stations` date frame can be used to search for discrete stations and their relevant station numbers. 
+#### `discrete_stations` data frame can be used to search for discrete stations and their relevant station numbers. 
 
 ```{r eval=FALSE}
 View(WDLimportr::discrete_stations)
@@ -98,7 +98,7 @@ View(WDLimportr::discrete_stations)
 Once you are viewing the data frame, you are able to filter out columns and search the data frame using R Studio's own search feature.
 
 ### Continuous Data
-There are two functions to import continuous water data from WDL
+#### There are two functions to import continuous water data from WDL
 
 1. `ImportContinuousRaw()`
 ```{r eval=FALSE}
@@ -132,7 +132,7 @@ head(WDLimportr::ImportContinuousMean(stationNumber = continuous_station, parame
 
 `ImportContinuousMean()` will take a station number as an input and return a data frame with all or some (user's choice) of the parameters that are collected from that station. As the name implies, this function pulls all of the daily average data that is stored in CNRA.
 
-#### `continuous_stations` date frame can be used to search for continuous stations and their relevant station numbers. 
+#### `continuous_stations` data frame can be used to search for continuous stations and their relevant station numbers. 
 
 ```{r eval=FALSE}
 View(WDLimportr::discrete_stations)
